@@ -1,0 +1,70 @@
+.main {
+  background-color: #000000;
+  height: 100vh;
+}
+
+.medium_logo_size {
+  max-height: 200px;
+}
+
+.large_logo_size {
+  max-height: 400px;
+}
+
+.center-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+
+@font-face {
+font-family: '3ds';
+src:url('/css/fonts/3ds.ttf.woff') format('woff'),
+    url('/css/fonts/3ds.ttf.svg#3ds') format('svg'),
+    url('/css/fonts/3ds.ttf.eot'),
+    url('/css/fonts/3ds.ttf.eot?#iefix') format('embedded-opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+#headline {
+  font-size: 5em;
+  margin-top: 7vh;
+  color: #8d568d;
+}
+
+a:link, a:visited{
+  text-decoration: none;
+}
+
+#guestlist, #contact{
+  font-size: 1.5em;
+  color: #8d568d;
+}
+#guestlist{
+  margin-right: 20px;
+}
+
+#contact{
+  margin-left: 20px;
+}
+
+body {
+  font-family: '3ds';
+}
+
+#contact-head{
+  font-size: 3em;
+  color: #8d568d;
+}
+
+#info{
+  font-family: '3ds';
+  font-size: 4em;
+  color: #8d568d;
+}
+
+#contactdiv{
+  height: 100vh; !important
+}
