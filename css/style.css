@@ -8,7 +8,7 @@
 }
 
 .large_logo_size {
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .center-me {
@@ -28,10 +28,17 @@ font-weight: normal;
 font-style: normal;
 }
 
+@font-face {
+	font-family: 'BrushScriptStd';
+	src: url('/css/fonts/BrushScriptStd.eot');
+	src: local('BrushScriptStd'), url('/css/fonts/BrushScriptStd.woff') format('woff'), url('/css/fonts/BrushScriptStd.ttf') format('truetype');
+}
+
 #headline {
   font-size: 5em;
   margin-top: 7vh;
-  color: #8d568d;
+  color: #f79bf8;
+  margin-bottom: 0px;
 }
 
 a:link, a:visited{
@@ -40,7 +47,7 @@ a:link, a:visited{
 
 #guestlist, #contact{
   font-size: 1.5em;
-  color: #8d568d;
+  color: #f79bf8;
 }
 #guestlist{
   margin-right: 20px;
@@ -56,15 +63,27 @@ body {
 
 #contact-head{
   font-size: 3em;
-  color: #8d568d;
+  color: #f79bf8;
 }
 
 #info{
   font-family: '3ds';
   font-size: 4em;
-  color: #8d568d;
+  color: #f79bf8;
 }
 
 #contactdiv{
   height: 100vh; !important
+}
+
+#links{
+  font-size: 1.6em;
+}
+
+#sundays{
+  font-family: 'BrushScriptStd';
+  font-size: 1.6em;
+  color: #f79bf8;
+  transform:rotate(-20deg);
+  webkit-transform:rotate(-20deg);
 }
