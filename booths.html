@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Contact Form Tutorial by Bootstrapious.com</title>
+        <title>Booth Packages</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -19,14 +19,18 @@
         </style>
     </head>
     <body>
-
+        <br><br>
+        <div id="boothpackages" class="row text-center">
+          <img id="boothimg" src="/img/booth_packages.png" alt="Booth Packages">
+        </div>
         <div class="container">
 
             <div class="row">
 
                 <div class="col-lg-8 col-lg-offset-2">
-                    <br><br>
-                    <h1 id="contact-head">Guestlist & Bookings</h1>
+                    <div class="arrow bounce">
+                        <a class="fa fa-arrow-down fa-2x" href="#contact-form"></a>
+                    </div>
                     <br>
                     <form id="contact-form" action="" role="form">
 
@@ -67,33 +71,33 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <label style="margin-left:15px" for="form_message">Choose a date for your booking *</label>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label for="form_message">Choose a date for your booking *</label>
                                         <input id="form_date" type="date" name="date" class="form-control myform" required="required" data-error="Please choose a date." >
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <label for="form_birthday">Birthday? *</label><br>
-                                    <label><input id="form_bday_yes" type="radio" name="bday" class="myform">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <label><input id="form_bday_no" type="radio" name="bday" class="myform">No</label>
-                                </div>
+                                <label style="margin-left:15px">Choose your booth package *</label>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <select name="packages" class="form-control" required>
+                                  <option value=" ">Select</option>
+                                  <option value="un">UN</option>
+                                  <option value="duex">DUEX</option>
+                                  <option value="trois">TROIS</option>
+                                </select>
+                              </div>
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <label for="form_birthday">Booth? *</label><br>
-                                    <label><input id="form_booth_yes" type="radio" name="booth" class="myform">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <label><input id="form_booth_no" type="radio" name="booth" class="myform">No</label>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <input id="submit_btn" type="submit" class="btn btn-success" value="Send message">
+                                    <input id="submit_btn" type="submit" class="btn btn-success" value="Submit">
                                 </div>
                             </div>
                             <br>
@@ -117,5 +121,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
         <script src="/js/validator.js"></script>
         <script src="/js/snd_email.js"></script>
+        <script src="/js/smoothscroll.js"></script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Contact Form Tutorial by Bootstrapious.com</title>
+        <title>Guestlist</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -23,10 +23,13 @@
         <div class="container">
 
             <div class="row">
-
+              <div class="row text-center">
+                <img src="/img/logo.png" alt="Company Logo" class="small_logo_size">
+              </div>
                 <div class="col-lg-8 col-lg-offset-2">
-                    <br><br>
-                    <h1 id="contact-head">Guestlist & Bookings</h1>
+                    <div class="row text-center">
+                        <h1 id="contact-head">Guestlist</h1>
+                    </div>
                     <br>
                     <form id="contact-form" action="" role="form">
 
@@ -76,18 +79,35 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <label for="form_birthday">Birthday? *</label><br>
-                                    <label><input id="form_bday_yes" type="radio" name="bday" class="myform">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <label><input id="form_bday_no" type="radio" name="bday" class="myform">No</label>
-                                </div>
+                                <label style="margin-left:15px">Choose number of Guests * - Minimum 5 guests</label>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <select name="packages" class="form-control" required>
+                                  <option value=" ">Select</option>
+                                  <option value="v">5</option>
+                                  <option value="vi">6</option>
+                                  <option value="vii">7</option>
+                                  <option value="viii">8</option>
+                                  <option value="viii+">8+</option>
+                                </select>
+                              </div>
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <label for="form_birthday">Booth? *</label><br>
-                                    <label><input id="form_booth_yes" type="radio" name="booth" class="myform">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <label><input id="form_booth_no" type="radio" name="booth" class="myform">No</label>
+                                    <div class="form-group">
+                                        <label for="form_message">Names of Guests *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Enter names of guests, seperated by a comma. *" rows="4" required="required" data-error="Please enter names of guests."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="form_birthday">Birthday? *</label><br>
+                                    <label><input id="form_bday_yes" type="radio" name="bday" class="myform">Yes</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label><input id="form_bday_no" type="radio" name="bday" class="myform">No</label>
                                 </div>
                             </div>
                             <br>
