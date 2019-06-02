@@ -11,6 +11,14 @@
   max-height: 500px;
 }
 
+.small_logo_size {
+  max-height: 200px;
+}
+
+.larger_logo_size {
+  max-height: 900px;
+}
+
 .center-me {
   display: flex;
   justify-content: center;
@@ -45,16 +53,16 @@ a:link, a:visited{
   text-decoration: none;
 }
 
-#guestlist, #contact{
+#guestlist, #booths{
   font-size: 1.5em;
   color: #f79bf8;
 }
-#guestlist{
-  margin-right: 20px;
+#booths{
+  margin-right: 60px;
 }
 
-#contact{
-  margin-left: 20px;
+#guestlist{
+  margin-left: 60px;
 }
 
 body {
@@ -84,6 +92,51 @@ body {
   font-family: 'BrushScriptStd';
   font-size: 1.6em;
   color: #f79bf8;
-  transform:rotate(-20deg);
-  webkit-transform:rotate(-20deg);
+  transform:rotate(-30deg);
+  webkit-transform:rotate(-30deg);
+}
+
+#boothimg{
+  max-height: 500px;
+}
+
+#boothpackages{
+  margin: 0px;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+
+.small_sunday{
+  margin-top: 5vh;
+  max-width: 350px;
+}
+
+.large_sunday{
+  margin-top: 15vh;
+  max-width: 400px;
+}
+
+.fab,.far {
+  margin-left: 10px;
+  margin-right: 10px;
 }
