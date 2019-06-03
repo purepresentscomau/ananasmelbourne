@@ -7,7 +7,6 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
         <link href='/css/style.css' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <style>
           body{
             background-color: #000000;
@@ -19,20 +18,27 @@
         </style>
     </head>
     <body>
-        <br><br>
-        <div id="boothpackages" class="row text-center">
+      <div class="col-lg-8 col-lg-offset-2" >
+        <div class="col-md-2">
+          <a href="/index.html" style="text-decoration:none">
+            <i id="homeicon" class="fas fa-home fa-3x myhome"></i>
+          </a>
+        </div>
+        <div id="boothpackages" class="col-md-8 text-center">
           <img id="boothimg" src="/img/booth_packages.png" alt="Booth Packages">
         </div>
+
+      </div>
         <div class="container">
 
             <div class="row">
 
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="arrow bounce">
-                        <a class="fa fa-arrow-down fa-2x" href="#contact-form"></a>
+                        <a class="fa fa-arrow-down fa-2x" href="#gform"></a>
                     </div>
                     <br>
-                    <form id="contact-form" action="" role="form">
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzFQDAZ0R1FCDCX45RFR5zoafIPJRT7mbKsUwK7kA/exec" role="form">
 
                         <div class="messages"></div>
 
@@ -107,7 +113,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </form>
 
                 </div><!-- /.8 -->
@@ -120,7 +125,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
         <script src="/js/validator.js"></script>
-        <script src="/js/snd_email.js"></script>
         <script src="/js/smoothscroll.js"></script>
+        <script type="text/javascript" src="/js/snd_email.js"></script>
     </body>
 </html>
