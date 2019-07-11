@@ -1,10 +1,13 @@
+body{
+  background-color: black;
+}
 .main {
   background-color: #000000;
   height: 100vh;
 }
 
 .medium_logo_size {
-  max-height: 200px;
+  max-height: 350px;
 }
 
 .large_logo_size {
@@ -17,6 +20,10 @@
 
 .larger_logo_size {
   max-height: 900px;
+}
+
+.russ{
+  max-height: 350px;
 }
 
 .center-me {
@@ -108,6 +115,9 @@ body {
 
 .arrow {
   text-align: center;
+}
+
+.margin-big {
   margin: 8% 0;
 }
 .bounce {
@@ -128,6 +138,11 @@ body {
   }
 }
 
+.scheduletable {
+  color: white;
+  font-size: 1.5em;
+}
+
 .small_sunday{
   margin-top: 5vh;
   max-width: 350px;
@@ -146,4 +161,22 @@ body {
 .myhome {
   margin-top: 10vh;
   z-index:9999;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 10px;
+}
+
+th,td {
+  font-weight: normal;
+  padding: 15px;
+}
+
+.ananaslogo {
+  margin-right: 40px;
+}
+
+.footer{
+  margin-bottom: 5%;
 }
